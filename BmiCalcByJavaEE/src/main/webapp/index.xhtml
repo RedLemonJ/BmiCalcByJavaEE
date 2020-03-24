@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"> 
+
+<h:head>
+	<title>BmiCalcByJavaEE</title>
+</h:head> 
+<h:body> 
+	<h:form>
+		<dl>
+			<dt>名前:</dt>
+			<dd>
+				<input type="text" jsf:value="#{bmiInputMB.name}" />
+			</dd>
+			<dt>身長(m):</dt>
+			<dd>
+				<input type="text" jsf:value="#{bmiInputMB.height}" />
+			</dd>
+			<dt>体重(kg):</dt>
+			<dd>
+				<input type="text" jsf:value="#{bmiInputMB.weight}" />
+			</dd>
+			<dt>計算</dt>
+			<dd>
+				<button jsf:action="#{bmiInputMB.submit}">BMI計算</button>
+			</dd>
+		</dl>
+		<!-- 
+		<p>名前: #{bmiInputMB.name}</p>
+		<p>身長: #{bmiInputMB.height} m</p>
+		<p>体重: #{bmiInputMB.weight} kg</p>
+		<p class="bmiStyle">BMI: #{bmiInputMB.bmi} </p>
+		 -->
+	</h:form>
+</h:body> 
+</html>
